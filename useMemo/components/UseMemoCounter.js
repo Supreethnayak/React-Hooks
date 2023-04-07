@@ -9,7 +9,7 @@ import { useState, useMemo } from "react";
 // 2. dependency
 
 // Problem - prevent counterOne from re-render
-export default function UseCallbackCounter() {
+export default function UseMemoCounter() {
   const [counterOne, setCounterOne] = useState(0);
   const [counterTwo, setCounterTwo] = useState(0);
   const handleBtnOne = () => {
