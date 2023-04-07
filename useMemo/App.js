@@ -1,10 +1,10 @@
 import "./styles.css";
-import UseCallbackCounter from "./components/UseCallbackCounter";
+import UseMemoCounter from "./components/UseMemoCounter";
 
 export default function App() {
   return (
     <div className="App">
-      <UseCallbackCounter />
+      <UseMemoCounter />
     </div>
   );
 }
