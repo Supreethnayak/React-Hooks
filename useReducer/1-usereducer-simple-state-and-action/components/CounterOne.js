@@ -1,6 +1,7 @@
+// problem: creating counter - to increment,decrement and reset its value
 import { useReducer } from "react";
 const intialState = 0;
-// accepts currentState, action, returns new state
+//2. accepts currentState, action, returns new state
 const reducer = (currentState, action) => {
   switch (action) {
     case "increment":
@@ -14,7 +15,7 @@ const reducer = (currentState, action) => {
   }
 };
 export default function CounterOne() {
-  // accepts reducer, intialState, returns [newState,dispatch]
+  //1. accepts reducer, intialState, returns [newState,dispatch]
   const [newState, dispatch] = useReducer(reducer, intialState);
 
   return (
